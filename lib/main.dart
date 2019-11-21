@@ -51,8 +51,14 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Coding With Flash'),
+              Text('Coding With Flash',
+                style: TextStyle(
+                    fontSize: 19,
+                    fontWeight: FontWeight.bold),),
+              SizedBox(height: 20),
               RaisedButton(
                   onPressed: showNotification,
                   textColor: Colors.white,
